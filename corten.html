@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampes Corten | Electricop - Pascal Colin</title>
+    <meta name="description" content="Éclairage extérieur en acier Corten : lampes, bornes et appliques. Design rustique et durable pour jardins, allées et terrasses. Installation par Pascal Colin, électricien à Spa, Verviers, Malmedy et Saint-Vith.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Carrousel exemples Corten uniquement */
+        #carouselCorten { position: relative; }
+        #carouselCorten .carousel-inner { position: relative; width: 100%; overflow: hidden; height: 380px; }
+        #carouselCorten .carousel-item { display: none; position: relative; height: 100%; align-items: center; justify-content: center; background: #f3f4f6; }
+        #carouselCorten .carousel-item.active { display: flex; }
+        #carouselCorten .carousel-item img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+        #carouselCorten .carousel-indicators { position: absolute; bottom: 12px; left: 0; right: 0; list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 8px; z-index: 2; }
+        #carouselCorten .carousel-indicators li { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.6); cursor: pointer; border: none; }
+        #carouselCorten .carousel-indicators li.active { background: rgb(234 179 8); }
+        #carouselCorten .carousel-control-prev, #carouselCorten .carousel-control-next { position: absolute; top: 0; bottom: 0; width: 48px; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,0.3); z-index: 2; text-decoration: none; }
+        #carouselCorten .carousel-control-prev { left: 0; }
+        #carouselCorten .carousel-control-next { right: 0; }
+        #carouselCorten .carousel-control-prev-icon, #carouselCorten .carousel-control-next-icon { width: 24px; height: 24px; background: no-repeat center; }
+        #carouselCorten .carousel-control-prev-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4V0z'/%3e%3c/svg%3e"); }
+        #carouselCorten .carousel-control-next-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e"); }
+        #carouselCorten .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    </style>
+</head>
+<body class="font-sans text-gray-900 bg-gray-50">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="nav-logo-link">
+                    <img src="./image/logo.svg" alt="Electricop - Pascal Colin" class="nav-logo" />
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-yellow-600 transition">Accueil</a>
+                <a href="services.html" class="hover:text-yellow-600 transition">Services</a>
+                <a href="corten.html" class="text-yellow-600 font-bold">Lampes Corten</a>
+                <a href="apropos.html" class="hover:text-yellow-600 transition">À propos</a>
+                <a href="contact.html" class="hover:text-yellow-600 transition">Contact</a>
+            </div>
+            <div>
+                <a href="tel:+32476257020" class="bg-yellow-custom text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition flex items-center text-sm md:text-base">
+                    <i class="fas fa-phone-alt mr-2"></i> 0476 25 70 20
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Corten -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 gallery-item rounded-2xl overflow-hidden">
+                <img src="./image/lampes%201.jpg" alt="Lampes et éclairage en Corten" class="w-full h-full object-cover min-h-[320px]">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-yellow-600 font-bold text-sm uppercase tracking-widest">Éclairage extérieur</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mt-2 mb-6">Lampes &amp; bornes en Corten</h1>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    L’acier Corten offre un aspect rouillé naturel et une résistance exceptionnelle aux intempéries. Idéal pour sublimer vos allées, jardins et terrasses avec un éclairage design et durable.
+                </p>
+                <a href="contact.html" class="inline-block bg-yellow-custom text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-400 transition shadow-lg">
+                    <i class="fas fa-lightbulb mr-2"></i> Demander un devis Corten
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pourquoi le Corten -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-4 uppercase tracking-tight">Pourquoi choisir le Corten ?</h2>
+        <div class="w-24 h-1 bg-yellow-500 mx-auto mb-12"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 card-hover">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-leaf text-2xl text-blue-900"></i>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Aspect naturel</h3>
+                <p class="text-gray-600 text-sm">La patine rouille stabilisée s’intègre parfaitement en extérieur et vieillit élégamment.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 card-hover">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-2xl text-blue-900"></i>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Résistant &amp; durable</h3>
+                <p class="text-gray-600 text-sm">Acier auto-patinable qui résiste au gel, à la pluie et aux chocs sans entretien lourd.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 card-hover">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-palette text-2xl text-blue-900"></i>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Design unique</h3>
+                <p class="text-gray-600 text-sm">Bornes, appliques et lampes sur mesure pour un jardin ou une façade qui vous ressemble.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Applications & technique -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6 uppercase tracking-tight">Où installer des lampes Corten ?</h2>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Allées et chemins</strong> — bornes et potelets pour guider la nuit</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Jardins et massifs</strong> — éclairage d’ambiance discret</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Terrasses et perrons</strong> — appliques murales ou sur poteau</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-yellow-500 mr-3 mt-1"></i> <strong>Façades et entrées</strong> — signalétique et mise en valeur</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6 uppercase tracking-tight">Notre expertise technique</h2>
+                <ul class="space-y-3 text-gray-600">
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> Bornes et luminaires étanches (IP65)</li>
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> LED basse consommation et longue durée de vie</li>
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> Détection crépusculaire ou interrupteur</li>
+                    <li><i class="fas fa-caret-right text-yellow-500 mr-2"></i> Câblage enterré et normes électriques respectées</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Réalisations Corten -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4 uppercase tracking-tight">Nos réalisations Corten</h2>
+            <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">Quelques exemples d’installations réalisées pour nos clients : bornes, appliques et éclairages sur mesure.</p>
+        </div>
+
+        <div id="carouselCorten" class="carousel slide max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselCorten" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselCorten" data-slide-to="1"></li>
+                <li data-target="#carouselCorten" data-slide-to="2"></li>
+                <li data-target="#carouselCorten" data-slide-to="3"></li>
+                <li data-target="#carouselCorten" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./image/lampes%201.jpg" alt="Lampes Corten - réalisation 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./image/lampes%202.jpg" alt="Lampes Corten - réalisation 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./image/lampes%203.jpg" alt="Lampes Corten - réalisation 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./image/lampes%204.jpg" alt="Lampes Corten - réalisation 4">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./image/lampes%205.jpg" alt="Lampes Corten - réalisation 5">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselCorten" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCorten" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="contact.html" class="text-blue-900 font-bold hover:text-yellow-600 transition inline-flex items-center">
+                <i class="fas fa-arrow-right mr-2"></i> Nous contacter
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 bg-blue-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4">Un projet d’éclairage Corten ?</h2>
+        <p class="text-blue-200 mb-8">Pascal Colin vous conseille et réalise l’étude et l’installation sur mesure à Spa, Verviers, Malmedy et Saint-Vith.</p>
+        <a href="contact.html" class="inline-block bg-yellow-custom text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-400 transition shadow-lg">Demander un devis gratuit</a>
+    </div>
+</section>
+
+<!-- Espace visuel CTA / Footer -->
+<div class="bg-gray-50" style="height: 3rem;"></div>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-blue-800 pb-12">
+        <div>
+            <a href="index.html" class="block mb-4"><img src="./image/logo.svg" alt="Electricop - Pascal Colin" class="h-10 w-auto max-w-[160px]" /></a>
+            <p class="text-blue-200">Expertise électrique au service de votre confort et de votre sécurité.</p>
+            <div class="flex space-x-4 mt-6">
+                <a href="https://www.facebook.com/pascal.colin.908" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-yellow-500" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-lg font-bold mb-4">Zones d'intervention</h4>
+            <ul class="text-blue-200 space-y-2">
+                <li><i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i> Spa</li>
+                <li><i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i> Verviers</li>
+                <li><i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i> Malmedy</li>
+                <li><i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i> Saint-Vith</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-lg font-bold mb-4">Contact Direct</h4>
+            <p class="text-blue-200 mb-2"><i class="fas fa-envelope text-yellow-500 mr-2"></i> electricop@skynet.be</p>
+            <p class="text-2xl font-bold text-yellow-500 italic"><i class="fas fa-phone-alt mr-2"></i> 0476 25 70 20</p>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 pt-8 text-center text-blue-400 text-sm">
+        &copy; 2026 Electricop - Pascal Colin. Tous droits réservés. | Mentions Légales
+    </div>
+</footer>
+
+<script>
+(function () {
+    var carousel = document.getElementById('carouselCorten');
+    if (!carousel) return;
+    var items = carousel.querySelectorAll('.carousel-item');
+    var indicators = carousel.querySelectorAll('.carousel-indicators li');
+    var total = items.length;
+    var index = 0;
+    var interval = 3000;
+
+    function goTo(i) {
+        index = (i + total) % total;
+        items.forEach(function (item, j) { item.classList.toggle('active', j === index); });
+        indicators.forEach(function (ind, j) { ind.classList.toggle('active', j === index); });
+    }
+
+    indicators.forEach(function (ind, i) {
+        ind.addEventListener('click', function (e) { e.preventDefault(); goTo(i); });
+    });
+    carousel.querySelector('.carousel-control-prev').addEventListener('click', function (e) { e.preventDefault(); goTo(index - 1); });
+    carousel.querySelector('.carousel-control-next').addEventListener('click', function (e) { e.preventDefault(); goTo(index + 1); });
+
+    setInterval(function () { goTo(index + 1); }, interval);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@source "../*.html";
+
+/* Custom styles - Electricop */
+:root {
+    --primary-blue: #1e3a8a;
+    --electric-yellow: #fbbf24;
+}
+.bg-blue-custom { background-color: var(--primary-blue); }
+.text-yellow-custom { color: var(--electric-yellow); }
+.bg-yellow-custom { background-color: var(--electric-yellow); }
+
+html { scroll-behavior: smooth; }
+
+.hero-gradient {
+    background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)),
+    url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Logo nav - hauteur = hauteur du nav (responsive) */
+nav div:has(> .nav-logo-link) {
+    align-self: stretch;
+}
+nav .nav-logo-link {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav .nav-logo {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none; /* override du base `img { max-width: 100%; }` */
+}
