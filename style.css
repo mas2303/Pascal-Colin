@@ -892,6 +892,12 @@ html {
   background-size: cover;
   background-position: center;
 }
+.hero-banner {
+  background: linear-gradient(rgba(30, 58, 138, 0.75), rgba(30, 58, 138, 0.75)),
+    url('image/baniere.jpg');
+  background-size: cover;
+  background-position: center;
+}
 .card-hover:hover {
   transform: translateY(-5px);
   transition: all 0.3s ease;
