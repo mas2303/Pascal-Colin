@@ -1,0 +1,130 @@
+/* Corten Galerie TC — Charte luxe : rouille, orange, noir */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap');
+
+.corten-theme {
+  --corten-noir: #0a0a0a;
+  --corten-noir-soft: #141414;
+  --corten-rouille: #8b4513;
+  --corten-rouille-clair: #a0522d;
+  --corten-orange: #c26232;
+  --corten-orange-accent: #d97706;
+  --corten-or: #b45309;
+  --corten-cream: #e8d5c4;
+  --corten-cream-soft: #f5ebe0;
+  font-family: 'Outfit', sans-serif;
+  background: var(--corten-noir);
+  color: var(--corten-cream);
+}
+
+.corten-theme .corten-font-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.corten-theme .corten-nav {
+  background: rgba(10, 10, 10, 0.95);
+  border-bottom: 1px solid rgba(194, 98, 50, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+.corten-theme .corten-nav a {
+  color: var(--corten-cream);
+  transition: color 0.2s ease;
+}
+
+.corten-theme .corten-nav a:hover {
+  color: var(--corten-orange);
+}
+
+.corten-theme .corten-btn {
+  background: linear-gradient(135deg, var(--corten-orange) 0%, var(--corten-or) 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(194, 98, 50, 0.35);
+}
+
+.corten-theme .corten-btn:hover {
+  background: linear-gradient(135deg, var(--corten-orange-accent) 0%, var(--corten-orange) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(194, 98, 50, 0.45);
+}
+
+.corten-theme .corten-hero {
+  background: linear-gradient(160deg, var(--corten-noir) 0%, var(--corten-noir-soft) 40%, rgba(139, 69, 19, 0.15) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.corten-theme .corten-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 70% 50%, rgba(194, 98, 50, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.corten-theme .corten-card {
+  background: linear-gradient(145deg, rgba(20, 20, 20, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%);
+  border: 1px solid rgba(194, 98, 50, 0.15);
+  border-radius: 1rem;
+  transition: all 0.4s ease;
+}
+
+.corten-theme .corten-card:hover {
+  border-color: rgba(194, 98, 50, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(194, 98, 50, 0.1);
+  transform: translateY(-4px);
+}
+
+.corten-theme .corten-underline {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--corten-orange), var(--corten-or));
+  border-radius: 2px;
+}
+
+.corten-theme .corten-section-alt {
+  background: var(--corten-noir-soft);
+  border-top: 1px solid rgba(194, 98, 50, 0.08);
+}
+
+.corten-theme .corten-cta-block {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.25) 0%, rgba(10, 10, 10, 0.98) 50%);
+  border: 1px solid rgba(194, 98, 50, 0.25);
+}
+
+.corten-theme .corten-footer {
+  background: #050505;
+  border-top: 1px solid rgba(194, 98, 50, 0.15);
+  color: rgba(232, 213, 196, 0.7);
+}
+
+.corten-theme .corten-footer a:hover {
+  color: var(--corten-orange);
+}
+
+.corten-theme .carousel-corten .carousel-item {
+  background: var(--corten-noir-soft);
+}
+
+.corten-theme .carousel-corten .carousel-indicators li {
+  background: rgba(232, 213, 196, 0.4);
+}
+
+.corten-theme .carousel-corten .carousel-indicators li.active {
+  background: var(--corten-orange);
+  box-shadow: 0 0 12px rgba(194, 98, 50, 0.6);
+}
+
+.corten-theme .carousel-corten .carousel-control-prev,
+.corten-theme .carousel-corten .carousel-control-next {
+  background: rgba(10, 10, 10, 0.6);
+  color: var(--corten-orange);
+}
+
+.corten-theme .carousel-corten .carousel-control-prev:hover,
+.corten-theme .carousel-corten .carousel-control-next:hover {
+  background: rgba(194, 98, 50, 0.2);
+  color: var(--corten-cream);
+}
